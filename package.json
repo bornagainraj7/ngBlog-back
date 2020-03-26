@@ -1,0 +1,37 @@
+{
+  "name": "ngBlog",
+  "version": "1.0.0",
+  "description": "Vehicle Tracking System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon index.js",
+    "forever": "forever start index.js",
+    "forever:stop": "forever start index.js",
+    "forever:list": "forever list"
+  },
+  "keywords": [],
+  "author": "Rajkumar Pal",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^6.2.9",
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "forever": "^2.0.0",
+    "forever-monitor": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.2",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2",
+    "pino": "^5.13.1",
+    "shortid": "^2.2.14",
+    "socket.io": "^2.2.0",
+    "supervisor": "^0.12.0",
+    "tracer": "^1.0.2"
+  }
+}
