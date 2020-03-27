@@ -8,7 +8,7 @@ exports.isAuthorised = (req, res, next) => {
     const token = req.query.authToken || req.params.authToken || req.body.authToken || req.header('authToken');
     if (token) {
         tokenLib.verifyToken(token)
-        .then(response => {
+        .then(decoded => {
             req.user = {
                 userId: decoded.userId,
                 email: decoded.email

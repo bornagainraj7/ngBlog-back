@@ -28,14 +28,13 @@ exports.generateToken = (data) => {
 
 exports.verifyToken = (token) => {
     return new Promise((resolve, reject) => {
-        jwt.verify(token, secretKey)
-        .then(decoded => {
+        try {
+            const decoded = jwt.verify(token, secretKey);
             resolve(decoded);
-        })
-        .catch(err => {
-            logger.error(err);
-            reject(err);
-        });
+        } catch(error) {
+            logger.error(error);
+            reject(error);
+        }
     });
     
 }
